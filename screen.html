@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        /* .one{
+            width: 1rem;
+            height: 2rem;
+            background: skyblue;
+        }
+        .two{
+            width: 2rem;
+            height: 2rem;
+            background: pink;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="one"></div>
+    <div class="two"></div>
+    <script>
+        var fs = window.innerWidth / 750 * 100 + 'px';
+        var oHtml = document.getElementsByTagName('html')[0];
+        oHtml.style.fontSize = fs;
+    </script> -->
+
+    <div class="one"></div>
+    <div class="one"></div>
+    <script>
+        var oOne = document.getElementsByTagName('div')[0];
+        var oTwo = document.getElementsByTagName('div')[1];
+        // 布局视口
+        var viewport = document.documentElement.clientWidth;
+        oOne.innerHTML ='布局视口:'+ viewport;
+        // 视觉视口
+        var lookview = window.innerWidth;
+        oTwo.innerHTML = '视觉视口:'+lookview;
+    </script>
+</body>
+</html>
